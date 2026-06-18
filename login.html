@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in to StacklyHub - Access your account and connect with your community.">
+  <title>Log In — StacklyHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true"><div><div class="loader-logo">StacklyHub</div><div class="loader-spinner"></div></div></div>
+
+  <header class="navbar glass-panel" role="navigation">
+    <a href="index.html" class="nav-brand">
+      <i class="fas fa-layer-group"></i> StacklyHub
+    </a>
+    <div class="nav-search neu-input-wrapper">
+      <i class="fas fa-search"></i>
+      <input type="search" class="neu-input" placeholder="Search StacklyHub..." aria-label="Search">
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+      <a href="login.html" class="neu-button primary" style="padding:0.5rem 1rem;border-radius:20px;font-size:0.9rem;text-decoration:none">Login</a>
+ <a href="404.html">
+    <button class="icon-btn" aria-label="Messages">
+        <i class="fas fa-envelope"></i>
+    </button>
+</a>
+      <a href="profile.html" class="user-profile">
+        <img src="assets/images/home 3.webp" alt="Profile" class="avatar">
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+  </header>
+
+  <div class="app-layout">
+    <aside class="sidebar-left" id="sidebar-left">
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Feed</a>
+  
+        <a href="explore.html" class="nav-link"><i class="fas fa-film"></i> Reels</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+        <a href="profile.html" class="nav-link"><i class="fas fa-chart-pie"></i> Profile</a>
+        <a href="contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i> Contact</a>
+      </nav>
+    </aside>
+
+  <main>
+    <!-- 1. Split Screen Hero + 2. Login Form -->
+    <section class="login-split" aria-label="Login">
+      <div class="login-visual reveal-left">
+        <div class="visual-content">
+          <i class="fas fa-layer-group floating"></i>
+          <h1>Welcome <span class="gradient-text">Back</span></h1>
+          <p>Connect with your community and discover what's new on StacklyHub.</p>
+          <div class="visual-stats">
+            <div><strong data-count="50" data-suffix="M+">0</strong><span>Users</span></div>
+            <div><strong data-count="2" data-suffix="B+">0</strong><span>Posts</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="login-form-side reveal-right">
+        <div class="login-card glass-card">
+          <h2>Log In</h2>
+          <p class="login-subtitle">Enter your credentials to access your account</p>
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="loginEmail">Email or Username</label>
+              <input type="text" id="loginEmail" class="form-control" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <div class="password-wrap">
+                <input type="password" id="loginPassword" class="form-control" placeholder="Enter password" required>
+                <button type="button" class="toggle-password" aria-label="Toggle password visibility"><i class="fas fa-eye"></i></button>
+              </div>
+            </div>
+            <div class="form-options">
+              <label class="checkbox-label"><input type="checkbox"> Remember me</label>
+              <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-ripple" style="width:100%">Log In</button>
+          </form>
+
+          <!-- 3. Social Login -->
+          <div class="social-login">
+            <div class="divider"><span>or continue with</span></div>
+            <div class="social-buttons">
+              <button class="social-btn" aria-label="Login with Google"><i class="fab fa-google"></i></button>
+              <button class="social-btn" aria-label="Login with Facebook"><i class="fab fa-facebook-f"></i></button>
+              <button class="social-btn" aria-label="Login with Apple"><i class="fab fa-apple"></i></button>
+            </div>
+          </div>
+          <p class="signup-prompt">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Platform Benefits -->
+    <section class="section" aria-label="Platform benefits">
+      <div class="container">
+        <header class="section-header reveal"><span class="section-label">Benefits</span><h2 class="section-title">Why <span class="gradient-text">StacklyHub?</span></h2></header>
+        <div class="benefits-grid">
+          <div class="benefit-card glass-card reveal"><i class="fas fa-bolt"></i><h3>Fast & Secure</h3><p>Lightning-fast performance with enterprise-grade security.</p></div>
+          <div class="benefit-card glass-card reveal delay-1"><i class="fas fa-users"></i><h3>Global Community</h3><p>Connect with 50M+ users across 180 countries.</p></div>
+          <div class="benefit-card glass-card reveal delay-2"><i class="fas fa-palette"></i><h3>Creative Tools</h3><p>Professional editing and AR filters built-in.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. User Reviews -->
+    <section class="section reviews-section" aria-label="User reviews">
+      <div class="container">
+        <header class="section-header reveal"><h2 class="section-title">What Users <span class="gradient-text">Say</span></h2></header>
+        <div class="reviews-grid">
+          <blockquote class="review-card glass-card reveal"><p>"Best social platform I've used. Clean interface and amazing features."</p><footer><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="User"><cite>Emma W.</cite></footer></blockquote>
+          <blockquote class="review-card glass-card reveal delay-1"><p>"The creator tools helped me grow my audience by 300% in 6 months."</p><footer><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="User"><cite>Marcus L.</cite></footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Security Features -->
+    <section class="section security-section" aria-label="Security features">
+      <div class="container">
+        <div class="security-wrapper">
+          <div class="security-content reveal-left">
+            <span class="section-label">Security</span>
+            <h2 class="section-title">Your Data is <span class="gradient-text">Protected</span></h2>
+            <ul class="security-list">
+              <li><i class="fas fa-shield-alt"></i> End-to-end encryption</li>
+              <li><i class="fas fa-fingerprint"></i> Two-factor authentication</li>
+              <li><i class="fas fa-lock"></i> GDPR compliant</li>
+              <li><i class="fas fa-user-shield"></i> Privacy controls</li>
+            </ul>
+          </div>
+          <div class="security-visual reveal-right">
+            <div class="security-icon floating"><i class="fas fa-shield-alt"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Statistics -->
+    <section class="section stats-section" aria-label="Statistics">
+      <div class="container">
+        <div class="login-stats-row">
+          <div class="login-stat reveal"><h3 data-count="99" data-suffix="%">0</h3><p>Uptime</p></div>
+          <div class="login-stat reveal delay-1"><h3 data-count="50" data-suffix="M+">0</h3><p>Active Users</p></div>
+          <div class="login-stat reveal delay-2"><h3 data-count="4" data-suffix=".9">0</h3><p>App Rating</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Help Section -->
+    <section class="section help-section" aria-label="Help">
+      <div class="container">
+        <div class="help-card glass-card reveal">
+          <h2>Need Help?</h2>
+          <p>Visit our help center or contact support for assistance with your account.</p>
+          <div class="help-links">
+            <a href="contact.html" class="btn btn-secondary">Contact Support</a>
+            <a href="#" class="btn btn-outline">Help Center</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CTA Banner -->
+    <section class="section cta-section" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-banner glass-card reveal-zoom">
+          <h2>New to StacklyHub?</h2>
+          <p>Create your free account and join millions of creators.</p>
+          <a href="signup.html" class="btn btn-primary btn-lg btn-ripple">Sign Up Free</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo">
+          <i class="fas fa-layer-group"></i>
+          StacklyHub
+        </a>
+
+        <p>
+          Connect, share and discover with creators around the world.
+          Join the fastest growing social community.
+        </p>
+
+        <div class="footer-social">
+          <a href="404.html"><i class="fab fa-instagram"></i></a>
+          <a href="404.html"><i class="fab fa-x-twitter"></i></a>
+          <a href="404.html"><i class="fab fa-linkedin"></i></a>
+          <a href="404.html"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="explore.html">Explore</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <a href="404.html">Help Center</a>
+        <a href="404.html">Privacy Policy</a>
+        <a href="404.html">Terms & Conditions</a>
+        <a href="404.html">Community Rules</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Get latest updates and trending content.</p>
+
+        <form class="newsletter" action="404.html" method="get">
+          <input type="email" name="email" placeholder="Enter email" required>
+          <button type="submit" aria-label="Subscribe">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 StacklyHub. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

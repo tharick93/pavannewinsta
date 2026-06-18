@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StacklyHub Profile - View posts, stories, followers and account insights.">
+  <title>Profile — StacklyHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true"><div><div class="loader-logo">StacklyHub</div><div class="loader-spinner"></div></div></div>
+
+  <header class="navbar glass-panel" role="navigation">
+    <a href="index.html" class="nav-brand">
+      <i class="fas fa-layer-group"></i> StacklyHub
+    </a>
+    <div class="nav-search neu-input-wrapper">
+      <i class="fas fa-search"></i>
+      <input type="search" class="neu-input" placeholder="Search StacklyHub..." aria-label="Search">
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+      <a href="login.html" class="neu-button primary" style="padding:0.5rem 1rem;border-radius:20px;font-size:0.9rem;text-decoration:none">Login</a>
+<a href="404.html">
+    <button class="icon-btn" aria-label="Messages">
+        <i class="fas fa-envelope"></i>
+    </button>
+</a>
+      <a href="profile.html" class="user-profile">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=88&h=88&fit=crop" alt="Profile" class="avatar">
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+  </header>
+
+  <div class="app-layout">
+    <aside class="sidebar-left" id="sidebar-left">
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Feed</a>
+
+        <a href="explore.html" class="nav-link"><i class="fas fa-film"></i> Reels</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+        <a href="profile.html" class="nav-link"><i class="fas fa-chart-pie"></i> Profile</a>
+        <a href="contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i> Contact</a>
+      </nav>
+    </aside>
+
+  <main>
+    <!-- 1. Profile Hero -->
+    <section class="profile-hero" aria-label="Profile hero">
+      <div class="profile-cover">
+        <img src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=1400&h=300&fit=crop" alt="Profile cover">
+      </div>
+      <div class="container profile-header reveal">
+        <div class="profile-avatar-wrap">
+          <img src="assets/images/home 3.webp" alt="Alexandra Chen profile photo" class="profile-avatar">
+        </div>
+        <div class="profile-info">
+          <h1>Alexandra Chen</h1>
+          <p class="profile-username">@alexandra_creates</p>
+          <div class="profile-actions">
+<a href="404.html">
+    <button class="btn btn-primary btn-sm btn-ripple">
+        Edit Profile
+    </button>
+</a>
+
+<a href="404.html">
+    <button class="btn btn-secondary btn-sm">
+        <i class="fas fa-cog"></i>
+    </button>
+</a>
+
+<a href="404.html">
+    <button class="btn btn-secondary btn-sm">
+        <i class="fas fa-share-alt"></i>
+    </button>
+</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. User Statistics -->
+    <section class="section profile-stats-section" aria-label="User statistics">
+      <div class="container">
+        <div class="profile-stats reveal">
+          <div class="profile-stat"><strong data-count="342" data-suffix="">0</strong><span>Posts</span></div>
+          <div class="profile-stat"><strong data-count="125" data-suffix="K">0</strong><span>Followers</span></div>
+          <div class="profile-stat"><strong data-count="892" data-suffix="">0</strong><span>Following</span></div>
+          <div class="profile-stat"><strong data-count="2" data-suffix="M">0</strong><span>Likes</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Bio Section -->
+    <section class="section" aria-label="Bio">
+      <div class="container">
+        <div class="bio-card glass-card reveal">
+          <h2>About</h2>
+          <p>Creative director & content creator. Sharing travel, fashion, and lifestyle inspiration from around the world. Based in Los Angeles.</p>
+          <div class="bio-links">
+            <a href="404.html"><i class="fas fa-link"></i> alexandrachen.com</a>
+            <span><i class="fas fa-map-marker-alt"></i> Los Angeles, CA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Story Highlights -->
+    <section class="section" aria-label="Story highlights">
+      <div class="container">
+        <h2 class="section-title reveal">Highlights</h2>
+        <div class="highlights-row">
+          <a href="404.html" class="highlight-link">
+    <div class="highlight-item reveal">
+        <div class="highlight-ring">
+            <img src="assets/images/black hodie.webp" alt="Travel highlight">
+        </div>
+        <span>Travel</span>
+    </div>
+</a>
+
+<a href="404.html" class="highlight-link">
+    <div class="highlight-item reveal delay-1">
+        <div class="highlight-ring">
+            <img src="assets/images/eleg.webp" alt="Fashion highlight">
+        </div>
+        <span>Fashion</span>
+    </div>
+</a>
+
+<a href="404.html" class="highlight-link">
+    <div class="highlight-item reveal delay-2">
+        <div class="highlight-ring">
+            <img src="assets/images/home 3.webp" alt="Food highlight">
+        </div>
+        <span>Food</span>
+    </div>
+</a>
+
+<a href="404.html" class="highlight-link">
+    <div class="highlight-item reveal delay-3">
+        <div class="highlight-ring">
+            <img src="assets/images/last.webp" alt="Fitness highlight">
+        </div>
+        <span>Fitness</span>
+    </div>
+</a>
+
+<a href="404.html" class="highlight-link">
+    <div class="highlight-item reveal delay-4">
+        <div class="highlight-ring add">
+            <i class="fas fa-plus"></i>
+        </div>
+        <span>New</span>
+    </div>
+</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5-7. Content Tabs -->
+    <section class="section content-section" aria-label="Content">
+      <div class="container">
+        <div class="content-tabs reveal">
+          <button class="tab-btn active" data-tab="photos"><i class="fas fa-th"></i> Photos</button>
+          <button class="tab-btn" data-tab="videos"><i class="fas fa-play"></i> Videos</button>
+          <button class="tab-btn" data-tab="saved"><i class="fas fa-bookmark"></i> Saved</button>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="content-panel active" data-panel="photos">
+         <div class="photo-grid">
+    
+    <a href="404.html" class="grid-link">
+        <div class="grid-item reveal">
+            <img src="assets/images/black hodie.webp" alt="Post">
+            <div class="grid-overlay">
+                <span><i class="fas fa-heart"></i> 12.5K</span>
+                <span><i class="fas fa-comment"></i> 342</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="404.html" class="grid-link">
+        <div class="grid-item reveal delay-1">
+            <img src="assets/images/eleg.webp" alt="Post">
+            <div class="grid-overlay">
+                <span><i class="fas fa-heart"></i> 8.2K</span>
+                <span><i class="fas fa-comment"></i> 156</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="404.html" class="grid-link">
+        <div class="grid-item reveal delay-2">
+            <img src="assets/images/home 3.webp" alt="Post">
+            <div class="grid-overlay">
+                <span><i class="fas fa-heart"></i> 15.7K</span>
+                <span><i class="fas fa-comment"></i> 489</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="404.html" class="grid-link">
+        <div class="grid-item reveal delay-3">
+            <img src="assets/images/last.webp" alt="Post">
+            <div class="grid-overlay">
+                <span><i class="fas fa-heart"></i> 6.3K</span>
+                <span><i class="fas fa-comment"></i> 98</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="404.html" class="grid-link">
+        <div class="grid-item reveal delay-4">
+            <img src="assets/images/oversize.webp" alt="Post">
+            <div class="grid-overlay">
+                <span><i class="fas fa-heart"></i> 22.1K</span>
+                <span><i class="fas fa-comment"></i> 567</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="404.html" class="grid-link">
+        <div class="grid-item reveal delay-5">
+            <img src="assets/images/jacket.webp" alt="Post">
+            <div class="grid-overlay">
+                <span><i class="fas fa-heart"></i> 9.8K</span>
+                <span><i class="fas fa-comment"></i> 234</span>
+            </div>
+        </div>
+    </a>
+
+</div>
+        </div>
+
+        <!-- Video Grid -->
+        <div class="content-panel" data-panel="videos">
+          <div class="video-grid">
+            <div class="video-item"><img src="assets/images/video1.webp" alt="Video"><div class="video-play"><i class="fas fa-play"></i></div><span>1.2M views</span></div>
+            <div class="video-item"><img src="assets/images/video2.webp" alt="Video"><div class="video-play"><i class="fas fa-play"></i></div><span>890K views</span></div>
+            <div class="video-item"><img src="assets/images/video3.webp" alt="Video"><div class="video-play"><i class="fas fa-play"></i></div><span>567K views</span></div>
+          </div>
+        </div>
+
+        <!-- Saved Posts -->
+        <div class="content-panel" data-panel="saved">
+          <div class="photo-grid">
+            <div class="grid-item"><img src="assets/images/saved1.webp" alt="Saved"><div class="grid-overlay"><i class="fas fa-bookmark"></i></div></div>
+            <div class="grid-item"><img src="assets/images/saved2.webp" alt="Saved"><div class="grid-overlay"><i class="fas fa-bookmark"></i></div></div>
+            <div class="grid-item"><img src="assets/images/saved3.webp" alt="Saved"><div class="grid-overlay"><i class="fas fa-bookmark"></i></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Followers Section -->
+    <section class="section" aria-label="Followers">
+      <div class="container">
+        <h2 class="section-title reveal">Followers</h2>
+        <div class="users-row">
+          <div class="user-chip glass-card reveal"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop" alt="Follower"><span>emma_w</span></div>
+          <div class="user-chip glass-card reveal delay-1"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" alt="Follower"><span>marcus_v</span></div>
+          <div class="user-chip glass-card reveal delay-2"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop" alt="Follower"><span>sofia_r</span></div>
+          <div class="user-chip glass-card reveal delay-3"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop" alt="Follower"><span>david_p</span></div>
+          <div class="user-chip glass-card reveal delay-4"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=50&h=50&fit=crop" alt="Follower"><span>luna_k</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Following Section -->
+    <section class="section" aria-label="Following">
+      <div class="container">
+        <h2 class="section-title reveal">Following</h2>
+        <div class="users-row">
+          <div class="user-chip glass-card reveal"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop" alt="Following"><span>travel_diary</span></div>
+          <div class="user-chip glass-card reveal delay-1"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&h=50&fit=crop" alt="Following"><span>style_icon</span></div>
+          <div class="user-chip glass-card reveal delay-2"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=50&h=50&fit=crop" alt="Following"><span>fit_pro</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Achievements -->
+    <section class="section achievements-section" aria-label="Achievements">
+      <div class="container">
+        <header class="section-header reveal"><span class="section-label">Achievements</span><h2 class="section-title">Your <span class="gradient-text">Badges</span></h2></header>
+        <div class="achievements-grid">
+          <div class="achievement-card glass-card reveal"><i class="fas fa-star"></i><h3>Top Creator</h3><p>100K+ followers</p></div>
+          <div class="achievement-card glass-card reveal delay-1"><i class="fas fa-fire"></i><h3>Viral Post</h3><p>1M+ likes on a post</p></div>
+          <div class="achievement-card glass-card reveal delay-2"><i class="fas fa-video"></i><h3>Reel Master</h3><p>50+ viral reels</p></div>
+          <div class="achievement-card glass-card reveal delay-3"><i class="fas fa-heart"></i><h3>Community Hero</h3><p>Active for 2+ years</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Recent Activity -->
+    <section class="section" aria-label="Recent activity">
+      <div class="container">
+        <h2 class="section-title reveal">Recent Activity</h2>
+        <div class="activity-list">
+          <div class="activity-item glass-card reveal"><i class="fas fa-heart"></i><p><strong>emma_w</strong> liked your post</p><span>2h ago</span></div>
+          <div class="activity-item glass-card reveal delay-1"><i class="fas fa-user-plus"></i><p><strong>marcus_v</strong> started following you</p><span>5h ago</span></div>
+          <div class="activity-item glass-card reveal delay-2"><i class="fas fa-comment"></i><p><strong>sofia_r</strong> commented on your reel</p><span>1d ago</span></div>
+          <div class="activity-item glass-card reveal delay-3"><i class="fas fa-share"></i><p><strong>david_p</strong> shared your post</p><span>2d ago</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Account Insights -->
+    <section class="section insights-section" aria-label="Account insights">
+      <div class="container">
+        <header class="section-header reveal"><span class="section-label">Insights</span><h2 class="section-title">Account <span class="gradient-text">Analytics</span></h2></header>
+        <div class="insights-grid">
+          <div class="insight-card glass-card reveal"><h3 data-count="45" data-suffix="K">0</h3><p>Profile Views (7d)</p><span class="insight-trend up"><i class="fas fa-arrow-up"></i> 12%</span></div>
+          <div class="insight-card glass-card reveal delay-1"><h3 data-count="8" data-suffix="%">0</h3><p>Engagement Rate</p><span class="insight-trend up"><i class="fas fa-arrow-up"></i> 3%</span></div>
+          <div class="insight-card glass-card reveal delay-2"><h3 data-count="2" data-suffix="K">0</h3><p>New Followers (7d)</p><span class="insight-trend up"><i class="fas fa-arrow-up"></i> 24%</span></div>
+          <div class="insight-card glass-card reveal delay-3"><h3 data-count="156" data-suffix="K">0</h3><p>Reach (7d)</p><span class="insight-trend down"><i class="fas fa-arrow-down"></i> 2%</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-col footer-brand">
+        <a href="#" class="footer-logo">
+          <i class="fas fa-layer-group"></i>
+          StacklyHub
+        </a>
+
+        <p>
+          Connect, share and discover with creators around the world.
+          Join the fastest growing social community.
+        </p>
+
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="explore.html">Explore</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Community Rules</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Get latest updates and trending content.</p>
+
+        <form class="newsletter" action="404.html" method="get">
+          <input type="email" name="email" placeholder="Enter email" required>
+          <button type="submit" aria-label="Subscribe">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 StacklyHub. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

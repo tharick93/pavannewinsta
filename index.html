@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StacklyHub Feed — Connect, share, and discover with the modern social community.">
+  <title>StacklyHub | Feed</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="earth" aria-hidden="true">
+    <div class="earth-loader">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path transform="translate(100 100)" d="M29.4,-17.4C33.1,1.8,27.6,16.1,11.5,31.6C-4.7,47,-31.5,63.6,-43,56C-54.5,48.4,-50.7,16.6,-41,-10.9C-31.3,-38.4,-15.6,-61.5,-1.4,-61C12.8,-60.5,25.7,-36.5,29.4,-17.4Z" fill="#7CC133"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path transform="translate(100 100)" d="M31.7,-55.8C40.3,-50,45.9,-39.9,49.7,-29.8C53.5,-19.8,55.5,-9.9,53.1,-1.4C50.6,7.1,43.6,14.1,41.8,27.6C40.1,41.1,43.4,61.1,37.3,67C31.2,72.9,15.6,64.8,1.5,62.2C-12.5,59.5,-25,62.3,-31.8,56.7C-38.5,51.1,-39.4,37.2,-49.3,26.3C-59.1,15.5,-78,7.7,-77.6,0.2C-77.2,-7.2,-57.4,-14.5,-49.3,-28.4C-41.2,-42.4,-44.7,-63,-38.5,-70.1C-32.2,-77.2,-16.1,-70.8,-2.3,-66.9C11.6,-63,23.1,-61.5,31.7,-55.8Z" fill="#7CC133"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path transform="translate(100 100)" d="M30.6,-49.2C42.5,-46.1,57.1,-43.7,67.6,-35.7C78.1,-27.6,84.6,-13.8,80.3,-2.4C76.1,8.9,61.2,17.8,52.5,29.1C43.8,40.3,41.4,53.9,33.7,64C26,74.1,13,80.6,2.2,76.9C-8.6,73.1,-17.3,59,-30.6,52.1C-43.9,45.3,-61.9,45.7,-74.1,38.2C-86.4,30.7,-92.9,15.4,-88.6,2.5C-84.4,-10.5,-69.4,-20.9,-60.7,-34.6C-52.1,-48.3,-49.8,-65.3,-40.7,-70C-31.6,-74.8,-15.8,-67.4,-3.2,-61.8C9.3,-56.1,18.6,-52.3,30.6,-49.2Z" fill="#7CC133"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path transform="translate(100 100)" d="M39.4,-66C48.6,-62.9,51.9,-47.4,52.9,-34.3C53.8,-21.3,52.4,-10.6,54.4,1.1C56.3,12.9,61.7,25.8,57.5,33.2C53.2,40.5,39.3,42.3,28.2,46C17,49.6,8.5,55.1,1.3,52.8C-5.9,50.5,-11.7,40.5,-23.6,37.2C-35.4,34,-53.3,37.5,-62,32.4C-70.7,27.4,-70.4,13.7,-72.4,-1.1C-74.3,-15.9,-78.6,-31.9,-73.3,-43C-68.1,-54.2,-53.3,-60.5,-39.5,-60.9C-25.7,-61.4,-12.9,-56,1.1,-58C15.1,-59.9,30.2,-69.2,39.4,-66Z" fill="#7CC133"></path></svg>
+    </div>
+    <p>Connecting...</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar glass-panel" role="navigation">
+    <a href="index.html" class="nav-brand">
+      <i class="fas fa-layer-group"></i> StacklyHub
+    </a>
+    <div class="nav-search neu-input-wrapper">
+      <i class="fas fa-search"></i>
+      <input type="search" class="neu-input" placeholder="Search StacklyHub..." aria-label="Search">
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+      
+      <a href="login.html" class="neu-button primary" style="padding:0.5rem 1rem;border-radius:20px;font-size:0.9rem;text-decoration:none">Login</a>
+      <a href="404.html">
+    <button class="icon-btn" aria-label="Messages">
+        <i class="fas fa-envelope"></i>
+    </button>
+</a>
+      <a href="profile.html" class="user-profile">
+        <img src="assets/images/home 3.webp" alt="Profile" class="avatar">
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+  </header>
+
+  <div class="app-layout has-right-sidebar">
+    <!-- Left Sidebar -->
+    <aside class="sidebar-left" id="sidebar-left">
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Feed</a>
+      
+        <a href="explore.html" class="nav-link"><i class="fas fa-film"></i> Reels</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+        <a href="profile.html" class="nav-link"><i class="fas fa-chart-pie"></i> Profile</a>
+        <a href="contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i> Contact</a>
+      </nav>
+     <a href="404.html" class="neu-button primary w-100">
+    <i class="fas fa-plus"></i> Create Post
+</a>
+    </aside>
+
+    <!-- Main Feed -->
+    <main class="main-content">
+
+      <!-- Create Post -->
+      <section class="neu-card create-post-area animate-card">
+        <div class="d-flex gap-md" style="margin-bottom:var(--spacing-md)">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=88&h=88&fit=crop" alt="Your profile" class="avatar">
+          <textarea id="post-textarea" class="neu-input" placeholder="What's going on?" aria-label="Write a post"></textarea>
+        </div>
+        <div class="d-flex justify-between align-center">
+          <div class="d-flex gap-sm create-post-tools">
+            <i class="fas fa-image" title="Add image"></i>
+            <i class="fas fa-video" title="Add video"></i>
+            <i class="fas fa-paperclip" title="Attach file"></i>
+          </div>
+          <button id="post-button" class="neu-button primary">Post</button>
+        </div>
+      </section>
+
+      <!-- Post: Jessica Martinez -->
+      <article class="neu-card post-card animate-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=88&h=88&fit=crop" alt="Jessica Martinez" class="avatar">
+            <div>
+              <h4 style="font-family:var(--font-main);font-size:1rem">Jessica Martinez</h4>
+              <span class="text-secondary" style="font-size:0.8rem">2 hrs ago</span>
+            </div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More options"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">Just wrapped up an incredible workshop on UI constraints and Neumorphism! The future of web aesthetics is looking beautifully tactile. ✨ #DesignThinking #WebDev</p>
+        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=400&fit=crop" alt="Design workshop" class="post-media">
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 1.2k</button>
+          <button><i class="far fa-comment"></i> 340</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: David Chen -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=88&h=88&fit=crop" alt="David Chen" class="avatar">
+            <div>
+              <h4 style="font-family:var(--font-main);font-size:1rem">David Chen</h4>
+              <span class="text-secondary" style="font-size:0.8rem">5 hrs ago</span>
+            </div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More options"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">Finally launched our new Premium Badges feature. Monetization for creators is now smoother than ever. Check it out on the services page! 🚀</p>
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 890</button>
+          <button><i class="far fa-comment"></i> 124</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: Marcus Johnson (thread) -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=88&h=88&fit=crop" alt="Marcus Johnson" class="avatar">
+            <div>
+              <h4 style="font-family:var(--font-main);font-size:1rem">Marcus Johnson</h4>
+              <span class="text-secondary" style="font-size:0.8rem">8 hrs ago</span>
+            </div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More options"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <h5 class="thread-title">The remote work paradox in 2026.</h5>
+        <p class="thread-body">As companies push for hybrid out of nowhere after years of fully remote structure, we're seeing an unprecedented shift in asynchronous communication tools. The real question isn't whether we work from home, but rather how we define core collaboration hours without burning out our highly distributed teams across seven different timezones. Drops your thoughts below. 👇</p>
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 3.4k</button>
+          <button><i class="far fa-comment"></i> 1.2k</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: Elena Rodriguez (link preview) -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=88&h=88&fit=crop" alt="Elena Rodriguez" class="avatar">
+            <div>
+              <h4 style="font-family:var(--font-main);font-size:1rem">Elena Rodriguez</h4>
+              <span class="text-secondary" style="font-size:0.8rem">Yesterday</span>
+            </div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More options"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">Just published a new deep dive on the intersection of AI generated interfaces and accessibility. It's a must read for anyone working in Web UI right now! 🌐</p>
+        <a href="#">
+          <div class="link-preview">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=240&h=240&fit=crop" alt="AI article preview">
+            <div class="link-preview-body">
+              <h5>AI Accessibility in Modern UI</h5>
+              <p>Can neural networks effectively generate semantic HTML for visually impaired users without breaking conventional screen reader patterns?</p>
+              <span>stacklyhub.com/blog</span>
+            </div>
+          </div>
+        </a>
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 540</button>
+          <button><i class="far fa-comment"></i> 89</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: Maya Lin -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=88&h=88&fit=crop" alt="Maya Lin" class="avatar">
+            <div><h4 style="font-family:var(--font-main);font-size:1rem">Maya Lin</h4><span class="text-secondary" style="font-size:0.8rem">3 hrs ago</span></div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">Just discovered a massive performance bottleneck in our React app. Memoization isn't always the answer! 💡</p>
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 450</button>
+          <button><i class="far fa-comment"></i> 85</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: Chris Walker -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=88&h=88&fit=crop" alt="Chris Walker" class="avatar">
+            <div><h4 style="font-family:var(--font-main);font-size:1rem">Chris Walker</h4><span class="text-secondary" style="font-size:0.8rem">5 hrs ago</span></div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">The new smart home integration project is coming along nicely. Check out this sleek dashboard layout!</p>
+        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=800&h=400&fit=crop" alt="Smart home dashboard" class="post-media">
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 1.8k</button>
+          <button><i class="far fa-comment"></i> 220</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: Ethan Hunt -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=88&h=88&fit=crop" alt="Ethan Hunt" class="avatar">
+            <div><h4 style="font-family:var(--font-main);font-size:1rem">Ethan Hunt</h4><span class="text-secondary" style="font-size:0.8rem">Yesterday</span></div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">Security must be a priority from day zero, not an afterthought right before production deploy. Let's talk about secure CI/CD pipelines. 🔒</p>
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 6.2k</button>
+          <button><i class="far fa-comment"></i> 890</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: Alex Rivera -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=88&h=88&fit=crop" alt="Alex Rivera" class="avatar">
+            <div><h4 style="font-family:var(--font-main);font-size:1rem">Alex Rivera</h4><span class="text-secondary" style="font-size:0.8rem">2 hrs ago</span></div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">Just wrapped up a session on scaling microservices. Remember: sometimes a monolith is actually exactly what you need to start with.</p>
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 1.1k</button>
+          <button><i class="far fa-comment"></i> 150</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: Sam Jenkins -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=88&h=88&fit=crop" alt="Sam Jenkins" class="avatar">
+            <div><h4 style="font-family:var(--font-main);font-size:1rem">Sam Jenkins</h4><span class="text-secondary" style="font-size:0.8rem">4 hrs ago</span></div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">Loving the new typography tools in the latest design software update! ✒️</p>
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=400&fit=crop" alt="Typography design" class="post-media">
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 2.4k</button>
+          <button><i class="far fa-comment"></i> 320</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: Leo Thompson -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=88&h=88&fit=crop" alt="Leo Thompson" class="avatar">
+            <div><h4 style="font-family:var(--font-main);font-size:1rem">Leo Thompson</h4><span class="text-secondary" style="font-size:0.8rem">6 hrs ago</span></div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">Anyone else finding that their productivity peaks around 2 AM? 🦉 #nightowl</p>
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 5.6k</button>
+          <button><i class="far fa-comment"></i> 1.2k</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+      <!-- Post: Nora West -->
+      <article class="neu-card post-card">
+        <div class="d-flex justify-between align-center" style="margin-bottom:var(--spacing-sm)">
+          <div class="d-flex gap-md align-center">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=88&h=88&fit=crop" alt="Nora West" class="avatar">
+            <div><h4 style="font-family:var(--font-main);font-size:1rem">Nora West</h4><span class="text-secondary" style="font-size:0.8rem">12 hrs ago</span></div>
+          </div>
+          <button class="icon-btn" style="box-shadow:none;background:transparent" aria-label="More"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <p style="margin-bottom:var(--spacing-md)">Just launched my new portfolio site built entirely with vanilla HTML/CSS and some light JS. No frameworks! Feels good to go back to basics. 🌐</p>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop" alt="Coding setup" class="post-media">
+        <div class="post-actions">
+          <button class="like-btn"><i class="far fa-heart"></i> 8.9k</button>
+          <button><i class="far fa-comment"></i> 430</button>
+          <button><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar-right">
+      <div class="neu-card animate-card" style="margin-bottom:var(--spacing-lg)">
+        <h3 class="sidebar-card-title">Trending Topics</h3>
+        <ul class="flex-column gap-md">
+          <li><a href="explore.html" class="trending-link"><span>#Glassmorphism</span><span>54k posts</span></a></li>
+          <li><a href="explore.html" class="trending-link"><span>#Tech2026</span><span>32k posts</span></a></li>
+          <li><a href="explore.html" class="trending-link"><span>#DesignSystems</span><span>21k posts</span></a></li>
+        </ul>
+      </div>
+      <div class="neu-card animate-card">
+        <h3 class="sidebar-card-title">Suggested Connections</h3>
+        <ul class="flex-column gap-md">
+          <li class="suggestion-item">
+            <div class="d-flex gap-sm align-center">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&h=64&fit=crop" alt="Sophie Turner" class="avatar">
+              <span style="font-size:0.9rem;font-weight:500">Sophie Turner</span>
+            </div>
+            <button class="neu-button follow-btn primary" style="padding:0.3rem 0.8rem;font-size:0.8rem">Follow</button>
+          </li>
+          <li class="suggestion-item">
+            <div class="d-flex gap-sm align-center">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop" alt="Miles Davis" class="avatar">
+              <span style="font-size:0.9rem;font-weight:500">Miles Davis</span>
+            </div>
+            <button class="neu-button follow-btn primary" style="padding:0.3rem 0.8rem;font-size:0.8rem">Follow</button>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col footer-brand">
+      <a href="index.html" class="footer-logo">
+        <i class="fas fa-layer-group"></i>
+        StacklyHub
+      </a>
+
+      <p>
+        Connect, share and discover with creators around the world.
+        Join the fastest growing social community.
+      </p>
+
+      <div class="footer-social">
+        <a href="404.html"><i class="fab fa-instagram"></i></a>
+        <a href="404.html"><i class="fab fa-x-twitter"></i></a>
+        <a href="404.html"><i class="fab fa-linkedin"></i></a>
+        <a href="404.html"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="explore.html">Explore</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <a href="404.html">Help Center</a>
+      <a href="404.html">Privacy Policy</a>
+      <a href="404.html">Terms & Conditions</a>
+      <a href="404.html">Community Rules</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Get latest updates and trending content.</p>
+
+        <form class="newsletter" action="404.html" method="get">
+          <input type="email" name="email" placeholder="Enter email" required>
+          <button type="submit" aria-label="Subscribe">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+  <div class="footer-bottom">
+    <p>© 2026 StacklyHub. All Rights Reserved.</p>
+  </div>
+</footer>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
