@@ -49,3 +49,34 @@ function initPasswordToggle() {
     });
   });
 }
+// Role Selector
+const roleInputs = document.querySelectorAll('input[name="role"]');
+
+roleInputs.forEach(input => {
+  input.addEventListener('change', () => {
+    document.querySelectorAll('.role-option').forEach(option => {
+      option.classList.remove('active');
+    });
+
+    input.closest('.role-option').classList.add('active');
+  });
+});
+
+// Default active role
+const defaultRole = document.querySelector('input[name="role"]:checked');
+if (defaultRole) {
+  defaultRole.closest('.role-option').classList.add('active');
+}
+
+// Login Form Submit
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const selectedRole = document.querySelector('input[name="role"]:checked').value;
+
+  if (selectedRole === 'admin') {
+    window.location.href = 'admin.html';
+  } else {
+    window.location.href = 'user.html';
+  }
+});

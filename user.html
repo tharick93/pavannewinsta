@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard — StacklyHub</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/user.css">
+
+
+</head>
+<body>
+
+<!-- Loader -->
+
+<div class="page-loader">
+    <div>
+        <div class="loader-logo">StacklyHub</div>
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+
+<!-- Navbar -->
+
+<header class="navbar glass-panel">
+
+
+<a href="index.html" class="nav-brand">
+    <img src="assets/images/stack logo.png" alt="StacklyHub Logo" class="nav-logo">
+</a>
+
+<div class="nav-search neu-input-wrapper">
+    <i class="fas fa-search"></i>
+    <input type="search" class="neu-input" placeholder="Search creators, reels, posts...">
+</div>
+
+<div class="nav-actions">
+
+<a href="404.html">
+    <button class="icon-btn" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+</a>
+
+<a href="404.html">
+    <button class="icon-btn">
+        <i class="fas fa-bell"></i>
+    </button>
+</a>
+
+<a href="404.html">
+    <button class="icon-btn">
+        <i class="fas fa-envelope"></i>
+    </button>
+</a>
+
+    <a href="404.html" class="user-profile">
+        <img src="assets/images/home 3.webp" alt="Profile" class="avatar">
+    </a>
+
+</div>
+
+<button class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+</button>
+
+
+</header>
+
+<div class="app-layout">
+
+<!-- Sidebar -->
+
+<aside class="sidebar-left" id="sidebar-left">
+
+<nav class="nav-links">
+
+    <a href="index.html" class="nav-link">
+        <i class="fas fa-home"></i> Feed
+    </a>
+
+    <a href="user.html" class="nav-link active">
+        <i class="fas fa-chart-line"></i> Dashboard
+    </a>
+
+    <a href="explore.html" class="nav-link">
+        <i class="fas fa-film"></i> Reels
+    </a>
+
+    <a href="profile.html" class="nav-link">
+        <i class="fas fa-user"></i> Profile
+    </a>
+
+    <a href="contact.html" class="nav-link">
+        <i class="fas fa-envelope"></i> Contact
+    </a>
+ <a href="login.html" class="nav-link">
+        <i class="fas fa-home"></i> Logout
+    </a>
+</nav>
+
+
+</aside>
+
+<!-- Main Content -->
+
+<main class="dashboard-main">
+
+
+<!-- Welcome Banner -->
+<section class="welcome-banner glass-card">
+
+    <div class="welcome-content">
+        <h1>Welcome Back 👋</h1>
+        <p>
+            Here's what's happening with your account today.
+        </p>
+
+        <div class="banner-actions">
+            <button class="btn btn-primary">
+                Create Post
+            </button>
+
+            <button class="btn btn-secondary">
+                Upload Reel
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<!-- Stats -->
+<section class="dashboard-stats">
+
+    <div class="stat-card glass-card">
+        <i class="fas fa-users"></i>
+        <h3>125K</h3>
+        <p>Followers</p>
+    </div>
+
+    <div class="stat-card glass-card">
+        <i class="fas fa-user-friends"></i>
+        <h3>892</h3>
+        <p>Following</p>
+    </div>
+
+    <div class="stat-card glass-card">
+        <i class="fas fa-images"></i>
+        <h3>342</h3>
+        <p>Posts</p>
+    </div>
+
+    <div class="stat-card glass-card">
+        <i class="fas fa-play-circle"></i>
+        <h3>2.4M</h3>
+        <p>Reel Views</p>
+    </div>
+
+</section>
+
+<!-- Analytics -->
+<section class="analytics-section">
+
+    <div class="analytics-card glass-card">
+        <h2>Account Growth</h2>
+
+        <div class="growth-bars">
+
+            <div class="bar">
+                <span>Followers</span>
+                <div class="progress">
+                    <div class="fill followers"></div>
+                </div>
+            </div>
+
+            <div class="bar">
+                <span>Engagement</span>
+                <div class="progress">
+                    <div class="fill engagement"></div>
+                </div>
+            </div>
+
+            <div class="bar">
+                <span>Reach</span>
+                <div class="progress">
+                    <div class="fill reach"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="analytics-card glass-card">
+        <h2>Quick Insights</h2>
+
+        <ul class="insight-list">
+            <li>🔥 Reel engagement increased by 24%</li>
+            <li>📈 2.1K new followers this week</li>
+            <li>❤️ Most liked post reached 56K likes</li>
+            <li>🎯 Best posting time: 7 PM</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- Recent Posts -->
+<section class="dashboard-section">
+
+    <div class="section-header">
+        <h2>Recent Posts</h2>
+    </div>
+
+    <div class="posts-grid">
+
+        <div class="post-card">
+            <img src="assets/images/black hodie.webp" alt="">
+        </div>
+
+        <div class="post-card">
+            <img src="assets/images/eleg.webp" alt="">
+        </div>
+
+        <div class="post-card">
+            <img src="assets/images/home 3.webp" alt="">
+        </div>
+
+        <div class="post-card">
+            <img src="assets/images/last.webp" alt="">
+        </div>
+
+        <div class="post-card">
+            <img src="assets/images/oversize.webp" alt="">
+        </div>
+
+        <div class="post-card">
+            <img src="assets/images/jacket.webp" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Notifications -->
+<section class="dashboard-section">
+
+    <div class="section-header">
+        <h2>Notifications</h2>
+    </div>
+
+    <div class="notifications-list">
+
+        <div class="notification glass-card">
+            <i class="fas fa-heart"></i>
+            <p>Your reel received 1.2K new likes.</p>
+        </div>
+
+        <div class="notification glass-card">
+            <i class="fas fa-user-plus"></i>
+            <p>240 users started following you today.</p>
+        </div>
+
+        <div class="notification glass-card">
+            <i class="fas fa-comment"></i>
+            <p>New comments on your latest post.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Trending Reels -->
+<section class="dashboard-section">
+
+    <div class="section-header">
+        <h2>Trending Reels</h2>
+    </div>
+
+    <div class="reels-grid">
+
+        <div class="reel-card">
+            <img src="assets/images/home 3.webp" alt="">
+            <span>1.4M Views</span>
+        </div>
+
+        <div class="reel-card">
+            <img src="assets/images/hoodie.webp" alt="">
+            <span>950K Views</span>
+        </div>
+
+        <div class="reel-card">
+            <img src="assets/images/last.webp" alt="">
+            <span>720K Views</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Quick Actions -->
+<section class="dashboard-section">
+
+    <div class="section-header">
+        <h2>Quick Actions</h2>
+    </div>
+
+    <div class="actions-grid">
+
+        <a href="profile.html" class="action-card glass-card">
+            <i class="fas fa-user-edit"></i>
+            <span>Edit Profile</span>
+        </a>
+
+        <a href="explore.html" class="action-card glass-card">
+            <i class="fas fa-film"></i>
+            <span>Explore Reels</span>
+        </a>
+
+        <a href="contact.html" class="action-card glass-card">
+            <i class="fas fa-headset"></i>
+            <span>Support</span>
+        </a>
+
+        <a href="index.html" class="action-card glass-card">
+            <i class="fas fa-home"></i>
+            <span>Go Home</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+</div>
+
+<script src="js/common.js"></script>
+
+<script src="js/user.js"></script>
+
+</body>
+</html>

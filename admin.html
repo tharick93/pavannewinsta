@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard — StacklyHub</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/user.css">
+
+
+</head>
+<body>
+
+<!-- Loader -->
+
+<div class="page-loader">
+    <div>
+        <div class="loader-logo">StacklyHub</div>
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+
+<!-- Navbar -->
+
+<header class="navbar glass-panel">
+
+
+<a href="index.html" class="nav-brand">
+    <img src="assets/images/stack logo.png" alt="StacklyHub Logo" class="nav-logo">
+</a>
+
+<div class="nav-search neu-input-wrapper">
+    <i class="fas fa-search"></i>
+    <input type="search" class="neu-input" placeholder="Search creators, reels, posts...">
+</div>
+
+<div class="nav-actions">
+
+<a href="404.html">
+    <button class="icon-btn" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+</a>
+
+<a href="404.html">
+    <button class="icon-btn">
+        <i class="fas fa-bell"></i>
+    </button>
+</a>
+
+<a href="404.html">
+    <button class="icon-btn">
+        <i class="fas fa-envelope"></i>
+    </button>
+</a>
+
+    <a href="404.html" class="user-profile">
+        <img src="assets/images/home 3.webp" alt="Profile" class="avatar">
+    </a>
+
+</div>
+
+<button class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+</button>
+
+
+</header>
+
+<div class="app-layout">
+
+<!-- Sidebar -->
+
+<aside class="sidebar-left" id="sidebar-left">
+
+<nav class="nav-links">
+
+    <a href="index.html" class="nav-link">
+        <i class="fas fa-home"></i> Feed
+    </a>
+
+    <a href="user.html" class="nav-link active">
+        <i class="fas fa-chart-line"></i> Dashboard
+    </a>
+
+    <a href="explore.html" class="nav-link">
+        <i class="fas fa-film"></i> Reels
+    </a>
+
+    <a href="profile.html" class="nav-link">
+        <i class="fas fa-user"></i> Profile
+    </a>
+
+    <a href="contact.html" class="nav-link">
+        <i class="fas fa-envelope"></i> Contact
+    </a>
+ <a href="login.html" class="nav-link">
+        <i class="fas fa-home"></i> Logout
+    </a>
+</nav>
+
+
+</aside>
+    <!-- Main -->
+
+    <main class="dashboard-main">
+
+        <!-- Welcome -->
+
+        <section class="welcome-banner glass-card">
+
+            <div class="welcome-content">
+                <h1>Admin Control Panel 🛡️</h1>
+                <p>
+                    Manage users, posts, reels and platform activities.
+                </p>
+
+                <div class="banner-actions">
+                    <div class="banner-actions">
+
+    <a href="404.html">
+        <button class="btn btn-primary">
+            Add Moderator
+        </button>
+    </a>
+
+    <a href="404.html">
+        <button class="btn btn-secondary">
+            View Reports
+        </button>
+    </a>
+
+</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Stats -->
+
+        <section class="dashboard-stats">
+
+            <div class="stat-card glass-card">
+                <i class="fas fa-users"></i>
+                <h3>245K</h3>
+                <p>Total Users</p>
+            </div>
+
+            <div class="stat-card glass-card">
+                <i class="fas fa-images"></i>
+                <h3>120K</h3>
+                <p>Total Posts</p>
+            </div>
+
+            <div class="stat-card glass-card">
+                <i class="fas fa-film"></i>
+                <h3>58K</h3>
+                <p>Total Reels</p>
+            </div>
+
+            <div class="stat-card glass-card">
+                <i class="fas fa-flag"></i>
+                <h3>126</h3>
+                <p>Pending Reports</p>
+            </div>
+
+        </section>
+
+        <!-- Analytics -->
+
+        <section class="analytics-section">
+
+            <div class="analytics-card glass-card">
+                <h2>Platform Growth</h2>
+
+                <div class="growth-bars">
+
+                    <div class="bar">
+                        <span>Users</span>
+                        <div class="progress">
+                            <div class="fill followers"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <span>Posts</span>
+                        <div class="progress">
+                            <div class="fill engagement"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <span>Reels</span>
+                        <div class="progress">
+                            <div class="fill reach"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="analytics-card glass-card">
+
+                <h2>Admin Insights</h2>
+
+                <ul class="insight-list">
+                    <li>📈 3,240 new users this week</li>
+                    <li>🔥 Reels reached 12M views</li>
+                    <li>⚠️ 126 pending reports</li>
+                    <li>✅ 98% platform uptime</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- User Management -->
+
+        <section class="dashboard-section">
+
+            <div class="section-header">
+                <h2>Recent Users</h2>
+            </div>
+
+            <div class="notifications-list">
+
+                <div class="notification glass-card">
+                    <i class="fas fa-user"></i>
+                    <p>John_Doe joined the platform.</p>
+                </div>
+
+                <div class="notification glass-card">
+                    <i class="fas fa-user"></i>
+                    <p>Sarah_Official verified account.</p>
+                </div>
+
+                <div class="notification glass-card">
+                    <i class="fas fa-user"></i>
+                    <p>Michael uploaded first reel.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Reports -->
+
+        <section class="dashboard-section">
+
+            <div class="section-header">
+                <h2>Reported Content</h2>
+            </div>
+
+            <div class="notifications-list">
+
+                <div class="notification glass-card">
+                    <i class="fas fa-flag"></i>
+                    <p>Post #2451 reported for spam.</p>
+                </div>
+
+                <div class="notification glass-card">
+                    <i class="fas fa-flag"></i>
+                    <p>Reel #785 reported for copyright.</p>
+                </div>
+
+                <div class="notification glass-card">
+                    <i class="fas fa-flag"></i>
+                    <p>User @sample reported for abuse.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Quick Actions -->
+
+        <section class="dashboard-section">
+
+            <div class="section-header">
+                <h2>Admin Actions</h2>
+            </div>
+
+            <div class="actions-grid">
+
+                <a href="404.html" class="action-card glass-card">
+                    <i class="fas fa-users"></i>
+                    <span>Manage Users</span>
+                </a>
+
+                <a href="404.html" class="action-card glass-card">
+                    <i class="fas fa-film"></i>
+                    <span>Manage Reels</span>
+                </a>
+
+                <a href="404.html" class="action-card glass-card">
+                    <i class="fas fa-flag"></i>
+                    <span>View Reports</span>
+                </a>
+
+                <a href="404.html" class="action-card glass-card">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+</html>

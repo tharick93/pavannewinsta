@@ -375,3 +375,68 @@
 @media (min-width: 1440px) {
   .login-card { padding: 48px; }
 }
+/* Login Role Selector */
+.role-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.role-option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  min-height: 90px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.role-option i {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  transition: 0.3s ease;
+}
+
+.role-option span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: 0.3s ease;
+}
+
+.role-option:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-primary);
+}
+
+.role-option.active {
+  border-color: var(--accent-primary);
+  background: rgba(99, 102, 241, 0.1);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.25);
+}
+
+.role-option.active i,
+.role-option.active span {
+  color: var(--accent-primary);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .role-selector {
+    grid-template-columns: 1fr;
+  }
+}
